@@ -1,8 +1,0 @@
-System Tickets:
-
-- splash screen
-- mainWindow: options search shows, contacts, help, facebook page, etc
-- searching for shows: list of shows nearby. When you click a show, the $$ appears and you can select your seat in room, checkout
-			and final confirmation
-- filter by.. cheaper, most popular, etc
-- festivals?
