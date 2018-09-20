@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/XenaticyLogo.png</file>
+        <file>images/3DG.png</file>
+        <file>images/Barely-Alive.png</file>
+        <file>images/Excision.jpg</file>
+        <file>images/Garrix.png</file>
+        <file>images/Kid.jpg</file>
+        <file>images/Metallica.png</file>
+        <file>images/PetitBiscuit.png</file>
+        <file>images/Seven Lions.jpg</file>
+        <file>images/Zomboy.png</file>
+        <file>images/Above_&amp;_Beyond_Logo.png</file>
+        <file>images/BoogieT_Logo.png</file>
+        <file>images/Herobust.png</file>
+        <file>images/Linkin-Park-Logo.png</file>
+        <file>images/Maroon5Logo.png</file>
+        <file>images/Papa_Roach_Logo.png</file>
+        <file>images/Pink-Floyd-Logo.png</file>
+        <file>images/Snails-logo.png</file>
+        <file>images/SpagLogo.png</file>
+        <file>images/Tiësto_logo.png</file>
+    </qresource>
+</RCC>
