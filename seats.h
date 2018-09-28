@@ -1,5 +1,8 @@
 #ifndef SEATS_H
 #define SEATS_H
+#include <string>
+
+using namespace std;
 
 #include <QDialog>
 
@@ -13,7 +16,13 @@ class Seats : public QDialog
 
 public:
     explicit Seats(QWidget *parent = 0);
+    void gridLayoutButton();
+    string getSeat(int i, int j);
     ~Seats();
+
+private slots:
+
+    void gridClicked();
 
 private:
     Ui::Seats *ui;
