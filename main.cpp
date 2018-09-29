@@ -13,9 +13,8 @@ int main(int argc, char *argv[])
     splashStart->show();
 
     MainWindow w;
-    QTimer::singleShot(5000, splashStart, SLOT(close()));
-    QTimer::singleShot(5050, &w, SLOT(show()));
-    //w.show();
+    QTimer::singleShot(5000, splashStart, SLOT(close())); //starts the splash screen
+    QTimer::singleShot(5025, &w, SLOT(show())); //starts program
 
     return a.exec();
 }

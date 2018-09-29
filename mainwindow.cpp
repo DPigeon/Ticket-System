@@ -18,11 +18,11 @@ MainWindow::~MainWindow()
 void MainWindow::on_pushButton_clicked()
 {
     search = new Search(this);
-    search->show();
+    search->show(); //Opens new search window
 }
 
 void MainWindow::on_pushButton_2_clicked()
 {
     contacts = new Contacts(this);
-    contacts->show();
+    contacts->show(); //Opens new contacts window
 }

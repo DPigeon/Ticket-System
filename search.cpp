@@ -5,7 +5,6 @@
 #include <QTime>
 #include <QBrush>
 #include <QTextCharFormat>
-#include "seats.h"
 
 Search::Search(QWidget *parent) :
     QDialog(parent),
@@ -17,6 +16,26 @@ Search::Search(QWidget *parent) :
 Search::~Search()
 {
     delete ui;
+}
+
+QString Search::getName()
+{
+    return name;
+}
+
+QString Search::getTime()
+{
+    return time;
+}
+
+QString Search::getPrice()
+{
+    return price;
+}
+
+QString Search::getLocation()
+{
+    return location;
 }
 
 void Search::on_listWidget_itemSelectionChanged()
@@ -153,13 +172,18 @@ void Search::on_listWidget_itemSelectionChanged()
         ui->label_time->setText("10:00PM to 3:00AM");
         ui->label_location->setText("New City Gas, Montreal");
     }
+    //Keep the infos of the show if we need them later
+    name = ui->listWidget->currentItem()->text();
+    time = ui->label_time->text();
+    price = ui->label_price->text();
+    location = ui->label_location->text();
 }
 
 void Search::on_confirmShow_clicked() //Maybe customize each theatre later ?
 {
     if(ui->listWidget->currentItem()->isSelected()){ //If a show is selected
-    seats = new Seats(this);
-    seats->show(); //Open the window
+        seats = new Seats(this, name, time, price, location); //Initializing a new page with parameters
+        seats->show(); //Open the window
     }
     else {
         QMessageBox::critical(this, "Choose A Show", "Please, select a show before choosing your seat."); //Otherwise tell the user
