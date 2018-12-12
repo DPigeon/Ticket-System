@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -28,19 +28,22 @@ SOURCES += \
         mainwindow.cpp \
     search.cpp \
     contacts.cpp \
-    seats.cpp
+    seats.cpp \
+    payment.cpp
 
 HEADERS += \
         mainwindow.h \
     search.h \
     contacts.h \
-    seats.h
+    seats.h \
+    payment.h
 
 FORMS += \
         mainwindow.ui \
     search.ui \
     contacts.ui \
-    seats.ui
+    seats.ui \
+    payment.ui
 
 RESOURCES += \
     qtresource.qrc

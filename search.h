@@ -15,6 +15,10 @@ class Search : public QDialog
 
 public:
     explicit Search(QWidget *parent = 0);
+    QString getName();
+    QString getTime();
+    QString getPrice();
+    QString getLocation();
     ~Search();
 
 private slots:
@@ -24,6 +28,7 @@ private slots:
     void on_confirmShow_clicked();
 
 private:
+    QString name, time, price, location;
     Ui::Search *ui;
     Seats *seats;
 };

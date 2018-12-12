@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QtSql>
+#include <QSqlDatabase>
+#include <QMessageBox>
 #include "search.h"
 #include "contacts.h"
 #include "seats.h"
@@ -21,6 +24,8 @@ public:
 private slots:
     void on_pushButton_clicked();
     void on_pushButton_2_clicked();
+
+    void on_pushButton_4_clicked();
 
 private:
     Ui::MainWindow *ui;
