@@ -33,5 +33,5 @@ void MainWindow::on_pushButton_4_clicked()
     db.setHostName("localhost");
     db.setUserName("root");
     db.setPassword("hello");
-    db.setDatabaseName("");
+    db.setDatabaseName("Ticket-System");
 }
